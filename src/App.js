@@ -1,10 +1,10 @@
-import Navigator from "./components/Navigator";
+import PortfolioContainer from "./components/PortfolioContainer";
+
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <Navigator />
-      </header>
+      <header className="App-header"></header>
+      <PortfolioContainer />
     </div>
   );
 }
