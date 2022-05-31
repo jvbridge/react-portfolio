@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import Navigator from "./Navigator";
+import Home from "./Home";
+import About from "./About";
+import Portfolio from "./Portfolio";
 
 function PortfolioContainer() {
   const handlePageChange = (page) => setNavState(page);
@@ -7,8 +10,12 @@ function PortfolioContainer() {
 
   const renderMain = () => {
     switch (navState) {
+      case "home":
+        return <Home />;
       case "about":
-        break;
+        return <About />;
+      case "portfolio":
+        return <Portfolio />;
       default:
         return (
           <div>
