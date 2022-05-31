@@ -2,12 +2,12 @@ import React, { useState } from "react";
 import Navigator from "./Navigator";
 
 function PortfolioContainer() {
+  const handlePageChange = (page) => setNavState(page);
   const [navState, setNavState] = useState("about");
-  const handlePagechange = (page) => setNavState(page);
   return (
     <Navigator
-      currentPage={navState}
-      handlePagechange={handlePagechange}
+      navState={navState}
+      handlePageChange={handlePageChange}
     ></Navigator>
   );
 }
