@@ -19,11 +19,11 @@ function Navigator({ navState, handlePageChange }) {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link
-              // href="#home"
               onClick={() => {
                 console.log("click home");
                 handlePageChange("home");
               }}
+              className={navState === "home" ? "nav-link active" : ""}
             >
               Home
             </Nav.Link>
@@ -33,6 +33,7 @@ function Navigator({ navState, handlePageChange }) {
                 console.log("click about");
                 handlePageChange("about");
               }}
+              className={navState === "about" ? "nav-link active" : ""}
             >
               About
             </Nav.Link>
@@ -42,6 +43,7 @@ function Navigator({ navState, handlePageChange }) {
                 console.log("click portfolio");
                 handlePageChange("portfolio");
               }}
+              className={navState === "portfolio" ? "nav-link active" : ""}
             >
               Portfolio
             </Nav.Link>
