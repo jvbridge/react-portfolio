@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React from "react";
 import fullStack from "./assets/images/full_stack.png";
 import "./assets/css/skills.css";
 import "./assets/fontawesome/css/all.css";
