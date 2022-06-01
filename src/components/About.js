@@ -1,5 +1,23 @@
-import React from "react";
-import fullStack from "./assets/full_stack.png";
+import React, { useRef, useState } from "react";
+import fullStack from "./assets/images/full_stack.png";
+import "./assets/css/skills.css";
+import "./assets/fontawesome/css/all.css";
+import { OverlayTrigger } from "react-bootstrap";
+
+const fullStackAlt =
+  "an image of a laptop with various programming languages around it";
+const renderTooltip = () => (
+  <div>
+    Image by{" "}
+    <a href="https://pixabay.com/users/lakexyde-2489063/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1935737">
+      Olalekan Oladipupo
+    </a>{" "}
+    from{" "}
+    <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1935737">
+      Pixabay
+    </a>
+  </div>
+);
 
 function About() {
   return (
@@ -11,19 +29,14 @@ function About() {
               className="bg-image hover-overlay ripple shadow-2-strong rounded-5"
               data-mdb-ripple-color="light"
             >
-              <a>
-                <img src={fullStack} className="img-fluid" />
-                <div>
-                  Image by
-                  <a href="https://pixabay.com/users/lakexyde-2489063/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1935737">
-                    Olalekan Oladipupo
-                  </a>
-                  from
-                  <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1935737">
-                    Pixabay
-                  </a>
-                </div>
-              </a>
+              <OverlayTrigger
+                placement="bottom"
+                delay={{ show: 250, hide: 400 }}
+                overlay={renderTooltip}
+              >
+                <img src={fullStack} className="img-fluid" alt={fullStackAlt} />
+              </OverlayTrigger>
+
               <a href="#!">
                 <div
                   className="mask"
@@ -47,7 +60,7 @@ function About() {
             <p className="text-muted">
               I've been interested in technology for as long as I can remember,
               but I only started focusing on being a full stack developer pretty
-              reecently. If you go look at
+              reecently. If you go look at{" "}
               <a href="https://github.com/jvbridge/">my github</a>, you'll see
               how much more I'm doing now
             </p>
@@ -61,73 +74,70 @@ function About() {
         </h4>
 
         <ul>
-          <li className="">
-            Front-end Development
-            <i className="fa-solid fa-browsers"></i>
+          <li>
+            Front-end Development <i className="fa-solid fa-browsers"></i>
           </li>
-          <li className="">
-            Back-end Development
-            <i className="fa-solid fa-server"></i>
+          <li>
+            Back-end Development <i className="fa-solid fa-server"></i>
           </li>
-          <li className="">C</li>
-          <li className="">C++</li>
-          <li className="">
+          <li>C</li>
+          <li>C++</li>
+          <li>
             Python <i className="fa-brands fa-python"></i>
           </li>
-          <li className="">
+          <li>
             Java <i className="fa-brands fa-java"></i>
           </li>
-          <li className="">
+          <li>
             Javascript <i className="fa-brands fa-js"></i>
           </li>
-          <li className="">
+          <li>
             Git <i className="fa-brands fa-git-alt"></i>
           </li>
-          <li className="">
+          <li>
             HTML 5 <i className="fa-brands fa-html5"></i>
           </li>
-          <li className="">
+          <li>
             Bootstrap <i className="fa-brands fa-bootstrap"></i>
           </li>
-          <li className="">
+          <li>
             Font-awesome <i className="fa-solid fa-font-awesome"></i>
           </li>
-          <li className="">
+          <li>
             Mysql <i className="fa-solid fa-database"></i>
           </li>
-          <li className="">
+          <li>
             MongoDB <i className="fa-solid fa-database"></i>
           </li>
-          <li className="">
+          <li>
             Node.js <i className="fa-brands fa-node-js"></i>
           </li>
-          <li className="">
+          <li>
             Express.js <i className="fa-solid fa-brackets-curly"></i>
           </li>
-          <li className="">
-            Command line tools
-            <i className="fa-solid fa-terminal"></i>
+          <li>
+            Command line tools <i className="fa-solid fa-terminal"></i>
           </li>
-          <li className="">
+          <li>
             React <i className="fa-brands fa-react"></i>
           </li>
-          <li className="">
+          <li>
             Insomnia <i className="fa-solid fa-network-wired"></i>
           </li>
-          <li className="">Wire framing</li>
-          <li className="">
+          <li>Wire framing</li>
+          <li>
             Pseudo-code <i className="fa-solid fa-brain-circuit"></i>
           </li>
-          <li className="">
+          <li>
             Server-side APIs <i className="fa-solid fa-gears"></i>
           </li>
-          <li className="">
+          <li>
             Client-side APIs <i className="fa-solid fa-gears"></i>
           </li>
-          <li className="">
+          <li>
             Sequelize <i className="fa-solid fa-database"></i>
           </li>
-          <li className="">
+          <li>
             Linux <i className="fa-brands fa-linux"></i>
           </li>
         </ul>
