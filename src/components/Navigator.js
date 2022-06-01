@@ -1,5 +1,5 @@
 import React from "react";
-import icon from "./assets/icon.jpg";
+import icon from "./assets/images/icon.jpg";
 import { Navbar, Container, Nav, NavDropdown } from "react-bootstrap";
 function Navigator({ navState, handlePageChange }) {
   return (
