@@ -21,8 +21,8 @@ const renderTooltip = () => (
 
 function About() {
   return (
-    <div id="about" className="container mt-5">
-      <section>
+    <div id="about" className="container mt-5" style={{ color: "white" }}>
+      <section style={{ height: "100vh" }}>
         <div className="row">
           <div className="col-md-6 gx-5 mb-4">
             <div
@@ -50,14 +50,14 @@ function About() {
             <h4>
               <strong>About me</strong>
             </h4>
-            <p className="text-muted">
+            <p>
               Hi! My name is Jonathan, I'm a full stack developer that is
               interested in all things technology and science fiction.
             </p>
             <p>
               <strong>My journey</strong>
             </p>
-            <p className="text-muted">
+            <p>
               I've been interested in technology for as long as I can remember,
               but I only started focusing on being a full stack developer pretty
               reecently. If you go look at{" "}
@@ -67,12 +67,17 @@ function About() {
           </div>
         </div>
       </section>
-      <hr className="my-5" />
-      <section id="skills">
+      <section style={{ color: "black" }} id="skills">
         <h4 className="mb-5 text-center">
           <strong>Skills</strong>
         </h4>
-
+        <p>
+          This is a list of a few of the skills I feel comfortable with. As I
+          learn and grow I'll add more to the list as appropriate. You might
+          want to check out{" "}
+          <a href="https://www.linkedin.com/in/jonathan-bridge/">my LinkedIn</a>{" "}
+          to see them as well as mroe about me.
+        </p>
         <ul>
           <li>
             Front-end Development <i className="fa-solid fa-browsers"></i>
