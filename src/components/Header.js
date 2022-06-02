@@ -4,7 +4,7 @@ import Home from "./Home";
 import About from "./About";
 import Portfolio from "./Portfolio";
 
-function PortfolioContainer() {
+function Header() {
   const handlePageChange = (page) => setNavState(page);
   const [navState, setNavState] = useState("about");
 
@@ -35,4 +35,4 @@ function PortfolioContainer() {
   );
 }
 
-export default PortfolioContainer;
+export default Header;
