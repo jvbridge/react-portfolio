@@ -1,13 +1,31 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.e7720ab7.css",
-    "main.js": "/react-portfolio/static/js/main.b12a7d8f.js",
+    "main.css": "/react-portfolio/static/css/main.96857090.css",
+    "main.js": "/react-portfolio/static/js/main.7b27fe53.js",
+    "static/media/full_stack.png": "/react-portfolio/static/media/full_stack.90e405d8a4f38cde8297.png",
+    "static/media/main_background.png": "/react-portfolio/static/media/main_background.7b4ce2d838f1304e44f9.png",
+    "static/media/fa-solid-900.ttf": "/react-portfolio/static/media/fa-solid-900.e615bbcb258550973c16.ttf",
+    "static/media/fa-brands-400.ttf": "/react-portfolio/static/media/fa-brands-400.b823fc0dbb5a5f0c21bb.ttf",
+    "static/media/fa-solid-900.woff2": "/react-portfolio/static/media/fa-solid-900.59edf72a325ac2048d60.woff2",
+    "static/media/fa-brands-400.woff2": "/react-portfolio/static/media/fa-brands-400.ebb7a127d2d8ee6f1832.woff2",
+    "static/media/inkly.png": "/react-portfolio/static/media/inkly.a91688fc658ca7071dca.png",
+    "static/media/mise-en-place.png": "/react-portfolio/static/media/mise-en-place.c41e34278ee714da2cd6.png",
+    "static/media/resume.pdf": "/react-portfolio/static/media/resume.4a3ae07d77e2cb997b13.pdf",
+    "static/media/fa-regular-400.ttf": "/react-portfolio/static/media/fa-regular-400.0d03b1bbd1d62c1e1284.ttf",
+    "static/media/nodejs-logo.png": "/react-portfolio/static/media/nodejs-logo.e6d661aae7e15e226b30.png",
+    "static/media/fa-regular-400.woff2": "/react-portfolio/static/media/fa-regular-400.0caf4c6cf244a90efcc5.woff2",
+    "static/media/note-taker.png": "/react-portfolio/static/media/note-taker.d89ff4b467eb33bd7d61.png",
+    "static/media/icon.jpg": "/react-portfolio/static/media/icon.68841f59184381bd419c.jpg",
+    "static/media/mongodb-logo.png": "/react-portfolio/static/media/mongodb-logo.7d39697513ea9da04da5.png",
+    "static/media/mvc-tech-blog.png": "/react-portfolio/static/media/mvc-tech-blog.3a0d3addc0aa41bb3b0f.png",
+    "static/media/fa-v4compatibility.ttf": "/react-portfolio/static/media/fa-v4compatibility.4baccb548138840fa33a.ttf",
+    "static/media/fa-v4compatibility.woff2": "/react-portfolio/static/media/fa-v4compatibility.afac89562a5301459069.woff2",
     "index.html": "/react-portfolio/index.html",
-    "main.e7720ab7.css.map": "/react-portfolio/static/css/main.e7720ab7.css.map",
-    "main.b12a7d8f.js.map": "/react-portfolio/static/js/main.b12a7d8f.js.map"
+    "main.96857090.css.map": "/react-portfolio/static/css/main.96857090.css.map",
+    "main.7b27fe53.js.map": "/react-portfolio/static/js/main.7b27fe53.js.map"
   },
   "entrypoints": [
-    "static/css/main.e7720ab7.css",
-    "static/js/main.b12a7d8f.js"
+    "static/css/main.96857090.css",
+    "static/js/main.7b27fe53.js"
   ]
 }
