@@ -1,5 +1,7 @@
-import PortfolioContainer from "./components/PortfolioContainer";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 import background from "./components/assets/images/main_background.png";
+
 function App() {
   return (
     <div
@@ -18,8 +20,8 @@ function App() {
           height: "100vh",
         }}
       >
-        <header className="App-header"></header>
-        <PortfolioContainer />
+        <Header className="App-header"></Header>
+        <Footer />
       </div>
     </div>
   );

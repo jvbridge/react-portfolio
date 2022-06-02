@@ -3,9 +3,8 @@ import Navigator from "./Navigator";
 import Home from "./Home";
 import About from "./About";
 import Portfolio from "./Portfolio";
-import Footer from "./Footer";
 
-function PortfolioContainer() {
+function Header() {
   const handlePageChange = (page) => setNavState(page);
   const [navState, setNavState] = useState("about");
 
@@ -32,9 +31,8 @@ function PortfolioContainer() {
         handlePageChange={handlePageChange}
       ></Navigator>
       {renderMain()}
-      <Footer />
     </>
   );
 }
 
-export default PortfolioContainer;
+export default Header;
