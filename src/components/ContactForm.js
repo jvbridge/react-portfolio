@@ -19,6 +19,7 @@ function ContactForm() {
           title: "Invalid email address",
           icon: "error",
         });
+        return;
       }
       Swal.fire({
         title: "Work in progress",
