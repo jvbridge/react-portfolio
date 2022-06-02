@@ -3,7 +3,6 @@ import Navigator from "./Navigator";
 import Home from "./Home";
 import About from "./About";
 import Portfolio from "./Portfolio";
-import Footer from "./Footer";
 
 function PortfolioContainer() {
   const handlePageChange = (page) => setNavState(page);
@@ -32,7 +31,6 @@ function PortfolioContainer() {
         handlePageChange={handlePageChange}
       ></Navigator>
       {renderMain()}
-      <Footer />
     </>
   );
 }
