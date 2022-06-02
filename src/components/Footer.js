@@ -1,8 +1,11 @@
 import React from "react";
-import { Navbar } from "react-bootstrap";
-
+import ContactForm from "./ContactForm";
 function Footer() {
-  return <Navbar>Footer</Navbar>;
+  return (
+    <div className="container mb-3">
+      <ContactForm />
+    </div>
+  );
 }
 
 export default Footer;
