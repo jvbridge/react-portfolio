@@ -1,6 +1,6 @@
 import React from "react";
 import icon from "./assets/images/icon.jpg";
-import { Navbar, Container, Nav, NavDropdown } from "react-bootstrap";
+import { Navbar, Container, Nav } from "react-bootstrap";
 function Navigator({ navState, handlePageChange }) {
   return (
     <Navbar variant="dark" bg="dark" expand="lg">
@@ -47,17 +47,6 @@ function Navigator({ navState, handlePageChange }) {
             >
               Portfolio
             </Nav.Link>
-            <NavDropdown title="Contact" id="basic-nav-dropdown">
-              <NavDropdown.Item href="https://www.linkedin.com/in/jonathan-bridge/">
-                Linked-In
-              </NavDropdown.Item>
-              <NavDropdown.Item href="https://github.com/jvbridge">
-                Github
-              </NavDropdown.Item>
-              <NavDropdown.Item href="https://medium.com/@jvbridge">
-                Medium
-              </NavDropdown.Item>
-            </NavDropdown>
           </Nav>
         </Navbar.Collapse>
       </Container>
