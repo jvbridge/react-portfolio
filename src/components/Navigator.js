@@ -5,7 +5,7 @@ function Navigator({ navState, handlePageChange }) {
   return (
     <Navbar variant="dark" bg="dark" expand="lg">
       <Container>
-        <Navbar.Brand href="#home">
+        <Navbar.Brand onClick={() => handlePageChange("home")}>
           <img
             alt="icon"
             src={icon}
