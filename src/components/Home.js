@@ -1,6 +1,5 @@
 import React from "react";
 import resume from "./assets/resume.pdf";
-import background from "./assets/images/main_background.png";
 
 function Home() {
   return (
