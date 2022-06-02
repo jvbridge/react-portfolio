@@ -44,18 +44,40 @@ function ContactForm() {
     // save it
     setState(tmpState);
   };
+
+  const handleLeave = (event) => {
+    if (!event.target.value) {
+      Swal.fire({
+        title: "Required field",
+        icon: "error",
+        text: "You cannot submit the form without this field",
+      });
+    }
+  };
+
   return (
     <Form onSubmit={handleSubmit} onChange={handleChange}>
       <Form.Label htmlFor="name">Name</Form.Label>
-      <Form.Control id="form-name" type="text" placeholder="Name" />
+      <Form.Control
+        id="form-name"
+        type="text"
+        placeholder="Name"
+        onBlur={handleLeave}
+      />
       <Form.Label>Email Address</Form.Label>
       <Form.Control
         id="form-email"
         type="email"
         placeholder="name@example.com"
+        onBlur={handleLeave}
       />
       <Form.Label>Message</Form.Label>
-      <Form.Control id="form-message" as="textarea" rows={3} />
+      <Form.Control
+        id="form-message"
+        as="textarea"
+        rows={3}
+        onBlur={handleLeave}
+      />
       <br />
       <Button variant="dark" onClick={handleSubmit}>
         Submit!{" "}
